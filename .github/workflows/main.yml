@@ -13,10 +13,3 @@ jobs:
         COLUMN_NAME: Progress
         PROJECT_URL: https://github.com/orgs/hercules-iitrpr/projects/1/
         REPO_URL: https://github.com/hercules-iitrpr/test-project-automation/
-    - name: Automate Repo2
-      uses: subhamX/github@v2
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        COLUMN_NAME: Progress
-        PROJECT_URL: https://github.com/orgs/ORG/projects/1
-        REPO_URL: https://github.com/hercules-iitrpr/new-pro
