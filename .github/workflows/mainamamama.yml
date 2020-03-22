@@ -1,8 +1,9 @@
-name: Add Recently Created Pull Requests to Project Column
+name: New Test
 on:
+  push:
+  pull_request:
   schedule:
-    - cron: "*/5 * * * *"
-# on: [push]
+    - cron: '15 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
