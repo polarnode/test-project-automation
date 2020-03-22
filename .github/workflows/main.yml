@@ -7,9 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Automate Repo1
-      uses: subhamX/github@v2
+      uses: subhamX/GitHub-Project-Bot@v2
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         COLUMN_NAME: Progress
         PROJECT_URL: https://github.com/orgs/hercules-iitrpr/projects/1/
         REPO_URL: https://github.com/hercules-iitrpr/test-project-automation/
+    - name: Automate Repo2
+      uses: subhamX/GitHub-Project-Bot@v2
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        COLUMN_NAME: Progress
+        PROJECT_URL: https://github.com/orgs/hercules-iitrpr/projects/1/
+        REPO_URL: https://github.com/hercules-iitrpr/new-pro
