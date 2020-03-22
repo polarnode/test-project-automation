@@ -1,0 +1,16 @@
+name: Update PRs On GitHub Project Card
+on:
+  [push]
+  # schedule:
+  #   - cron: "0 * * * *"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Automate Repo1
+      uses: subhamX/github
+      env:
+        SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
+        COLUMN_NAME: Progress
+        PROJECT_URL: https://github.com/hercules-iitrpr/
+        REPO_URL: https://github.com/hercules-iitrpr/test-project-automation
